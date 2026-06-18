@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GKHT Exotics — Exotic Car Rentals</title>
+  <meta name="description" content="Experience the extraordinary. GKHT Exotics offers the world's most sought-after vehicles for rent." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.svg" alt="GKHT" class="nav__logo-img">
+        <span>Exotics</span>
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="index.html"   class="nav__link">Home</a></li>
+        <li><a href="fleet.html"   class="nav__link">Fleet</a></li>
+        <li><a href="about.html"   class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+
+      <a href="contact.html" class="nav__cta">Book Now</a>
+
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile">
+    <a href="index.html"   class="nav__link">Home</a>
+    <a href="fleet.html"   class="nav__link">Fleet</a>
+    <a href="about.html"   class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--outline" style="margin-top:16px;">Book Now</a>
+  </div>
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+  <section class="hero">
+    <div class="hero__bg" style="background-image: url('https://www.exoticcarhacks.com/wp-content/uploads/2024/02/D-8WJU7I-scaled.jpeg');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <p class="label hero__label">San Francisco &middot; Los Angeles &middot; Miami &middot; Arizona</p>
+      <h1 class="hero__title">Drive Without<br>Compromise.</h1>
+      <p class="hero__sub">Select the world's most coveted machines —<br>delivered to your door.</p>
+      <div class="hero__actions">
+        <a href="fleet.html" class="btn btn--primary">
+          View the Fleet
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="contact.html" class="btn btn--ghost">Reserve Now</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ==============================
+       TICKER / MARQUEE
+  ============================== -->
+  <div class="ticker">
+    <div class="ticker__track">
+      <span>Ferrari</span>
+      <span class="ticker__dot">·</span>
+      <span>Mercedes</span>
+      <span class="ticker__dot">·</span>
+      <span>Rolls-Royce</span>
+      <span class="ticker__dot">·</span>
+      <span>Lamborghini</span>
+      <span class="ticker__dot">·</span>
+      <span>Tesla</span>
+      <span class="ticker__dot">·</span>
+      <span>Chevrolet</span>
+      <span class="ticker__dot">·</span>
+      <span>BMW</span>
+      <span class="ticker__dot">·</span>
+      <span>GMC</span>
+      <span class="ticker__dot">·</span>
+      <span>Porsche</span>
+      <span class="ticker__dot">·</span>
+    </div>
+  </div>
+
+  <!-- ==============================
+       INTRO / BRAND STATEMENT
+  ============================== -->
+  <section class="intro">
+    <div class="container intro__inner">
+      <div class="intro__left fade-in">
+        <p class="label">About GKHT Exotics</p>
+      </div>
+      <div class="intro__right">
+        <h2 class="fade-in fade-in-delay-1">We don't rent cars.<br>We deliver experiences.</h2>
+        <p class="intro__body fade-in fade-in-delay-2">
+          With locations in San Francisco, Los Angeles, Miami, and Arizona, GKHT Exotics curates a hand-selected roster of the rarest, fastest, and most jaw-dropping vehicles on the planet. Whether it's a weekend escape, a special occasion, or simply because you deserve it — we make the extraordinary accessible.
+        </p>
+        <a href="about.html" class="btn btn--ghost fade-in fade-in-delay-3">
+          Our Story
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ==============================
+       FEATURED FLEET PREVIEW
+  ============================== -->
+  <section class="featured">
+    <div class="container">
+      <div class="featured__header fade-in">
+        <p class="label">The Collection</p>
+        <h2>Featured Vehicles</h2>
+      </div>
+
+      <div class="featured__grid">
+
+        <!-- Car Card 1: Ferrari 296 GTB -->
+        <article class="car-card fade-in fade-in-delay-1">
+          <a href="cars/la-ferrari-296-gtb.html" class="car-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194442_8Rb1XYtuMLFPJdUZTEhAb6V8IY07fVRnnOITqqjd.png" alt="Ferrari 296 GTB" loading="lazy">
+            <div class="car-card__badge">Available</div>
+          </a>
+          <div class="car-card__body">
+            <p class="label">Supercar</p>
+            <h3 class="car-card__name">Ferrari 296 GTB</h3>
+            <div class="car-card__specs">
+              <span>0–60: 2.9s</span>
+              <span>819 hp</span>
+              <span>Los Angeles</span>
+            </div>
+            <div class="car-card__footer">
+              <p class="car-card__price">Starting at <strong>$1,650/day</strong></p>
+              <a href="cars/la-ferrari-296-gtb.html" class="btn btn--ghost">
+                View
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Car Card 2: Rolls-Royce Cullinan 2026 -->
+        <article class="car-card fade-in fade-in-delay-2">
+          <a href="cars/la-rolls-royce-cullinan-2026.html" class="car-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194446_Tb1gsKXzlCtRwCRcTxZR86CflOxVg0IyPnfIdttW.png" alt="Rolls-Royce Cullinan 2026" loading="lazy">
+            <div class="car-card__badge">Available</div>
+          </a>
+          <div class="car-card__body">
+            <p class="label">Luxury SUV</p>
+            <h3 class="car-card__name">Rolls-Royce Cullinan</h3>
+            <div class="car-card__specs">
+              <span>0–60: 4.8s</span>
+              <span>591 hp</span>
+              <span>Los Angeles</span>
+            </div>
+            <div class="car-card__footer">
+              <p class="car-card__price">Starting at <strong>$2,000/day</strong></p>
+              <a href="cars/la-rolls-royce-cullinan-2026.html" class="btn btn--ghost">
+                View
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Car Card 3: Lamborghini Urus Widebody -->
+        <article class="car-card fade-in fade-in-delay-3">
+          <a href="cars/la-vem-lamborghini-urus-widebody.html" class="car-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159050_Qrd6bjslUkabo1OpW35VD4NDYViXUIx3owa79RN8.jpg" alt="Lamborghini Urus Widebody" loading="lazy">
+            <div class="car-card__badge">Available</div>
+          </a>
+          <div class="car-card__body">
+            <p class="label">SUV</p>
+            <h3 class="car-card__name">Lamborghini Urus Widebody</h3>
+            <div class="car-card__specs">
+              <span>0–60: 3.3s</span>
+              <span>666 hp</span>
+              <span>Los Angeles</span>
+            </div>
+            <div class="car-card__footer">
+              <p class="car-card__price">Starting at <strong>$1,500/day</strong></p>
+              <a href="cars/la-vem-lamborghini-urus-widebody.html" class="btn btn--ghost">
+                View
+                <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="featured__cta fade-in">
+        <a href="fleet.html" class="btn btn--outline">
+          View Full Fleet
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ==============================
+       HOW IT WORKS
+  ============================== -->
+  <section class="process">
+    <div class="container">
+      <div class="process__header fade-in">
+        <p class="label">The Process</p>
+        <h2>Simple as it gets.</h2>
+      </div>
+
+      <div class="process__steps">
+        <div class="process__step fade-in fade-in-delay-1">
+          <div class="process__num">01</div>
+          <h3>Choose Your Vehicle</h3>
+          <p>Browse our curated collection and select the machine that speaks to you.</p>
+        </div>
+        <div class="process__step fade-in fade-in-delay-2">
+          <div class="process__num">02</div>
+          <h3>Submit a Request</h3>
+          <p>Fill out our quick booking form with your desired dates and pickup details.</p>
+        </div>
+        <div class="process__step fade-in fade-in-delay-3">
+          <div class="process__num">03</div>
+          <h3>We Confirm & Deliver</h3>
+          <p>Our team reaches out to finalize everything. We'll bring the car to you.</p>
+        </div>
+        <div class="process__step fade-in fade-in-delay-4">
+          <div class="process__num">04</div>
+          <h3>Hit the Road</h3>
+          <p>Keys in hand, road ahead. Drive something you'll never forget.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ==============================
+       STATS / TRUST BAR
+  ============================== -->
+  <section class="stats">
+    <div class="container stats__grid">
+      <div class="stats__item fade-in">
+        <p class="stats__num">100+</p>
+        <p class="label">Satisfied Clients</p>
+      </div>
+      <div class="stats__item fade-in fade-in-delay-1">
+        <p class="stats__num">56+</p>
+        <p class="label">Vehicles Available</p>
+      </div>
+      <div class="stats__item fade-in fade-in-delay-2">
+        <p class="stats__num">5★</p>
+        <p class="label">Average Rating</p>
+      </div>
+      <div class="stats__item fade-in fade-in-delay-3">
+        <p class="stats__num">24/7</p>
+        <p class="label">Concierge Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       CTA BAND
+  ============================== -->
+  <section class="cta-band">
+    <div class="container cta-band__inner fade-in">
+      <div>
+        <p class="label">Ready to drive?</p>
+        <h2>Your next experience<br>awaits.</h2>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary">
+          Book a Rental
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="tel:9284674003" class="btn btn--ghost">
+          Call (928) 467-4003
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">GKHT Exotics</p>
+          <p>Exotic and luxury car rentals across San Francisco, Los Angeles, Miami, and Arizona. Unforgettable machines, effortless experience.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:9284674003">(928) 467-4003</a></li>
+            <li><a href="contact.html">Book Online</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/gkht/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@garrettleake" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://x.com/aresgarrett" target="_blank" rel="noopener">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 GKHT Exotics. All rights reserved.</p>
+        <p>gkhtexotics.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

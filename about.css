@@ -1,0 +1,175 @@
+/* ============================================
+   GKHT Exotics — About Page Styles
+   ============================================ */
+
+/* ---- Story Section ---- */
+.about-story__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-story__text h2 {
+  margin-bottom: 32px;
+}
+
+.about-story__body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-story__body p {
+  font-size: 1rem;
+  color: var(--gray-5);
+  line-height: 1.85;
+}
+
+.about-story__image {
+  aspect-ratio: 4 / 5;
+}
+
+.img-block-placeholder {
+  width: 100%;
+  height: 100%;
+  background: var(--gray-1);
+  border: 1px dashed var(--gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-block-placeholder span {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-3);
+}
+
+/* ---- Values ---- */
+.values__header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 56px;
+}
+
+.values__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.value-card {
+  background: var(--gray-1);
+  padding: 40px 32px;
+}
+
+.value-card__icon {
+  width: 52px;
+  height: 52px;
+  border: 1px solid var(--gray-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--gray-4);
+}
+
+.value-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.value-card p {
+  font-size: 0.88rem;
+  color: var(--gray-4);
+  line-height: 1.75;
+}
+
+/* ---- Differentiators ---- */
+.differentiators__inner {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.differentiators__left h2 {
+  margin-top: 16px;
+}
+
+.differentiators__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.diff-item {
+  display: flex;
+  gap: 32px;
+  padding: 36px 0;
+  border-bottom: 1px solid var(--gray-2);
+}
+
+.diff-item:first-child {
+  border-top: 1px solid var(--gray-2);
+}
+
+.diff-item__num {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--gray-3);
+  flex-shrink: 0;
+  padding-top: 4px;
+}
+
+.diff-item h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.diff-item p {
+  font-size: 0.9rem;
+  color: var(--gray-4);
+  line-height: 1.75;
+}
+
+/* ---- CTA Band ---- */
+.cta-band {
+  padding: 80px 0;
+}
+
+.cta-band__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cta-band__actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+/* ============================================
+   RESPONSIVE — ABOUT
+   ============================================ */
+@media (max-width: 1024px) {
+  .values__grid { grid-template-columns: repeat(2, 1fr); }
+  .differentiators__inner { grid-template-columns: 1fr; gap: 40px; }
+}
+
+@media (max-width: 768px) {
+  .about-story__inner { grid-template-columns: 1fr; gap: 40px; }
+  .about-story__image { aspect-ratio: 16 / 9; }
+  .values__grid { grid-template-columns: 1fr; }
+  .cta-band__inner { flex-direction: column; align-items: flex-start; }
+}

@@ -1,0 +1,314 @@
+/* ============================================
+   GKHT Exotics — Car Detail Page
+   ============================================ */
+
+/* ── Layout ── */
+.car-detail {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  min-height: calc(100vh - var(--nav-h));
+  align-items: start;
+}
+
+/* ── Left: Photo panel ── */
+.car-detail__left {
+  position: sticky;
+  top: var(--nav-h);
+  height: calc(100vh - var(--nav-h));
+  display: flex;
+  flex-direction: column;
+  background: var(--gray-1);
+  overflow: hidden;
+}
+
+.car-detail__main-img {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.car-detail__main-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.car-detail__main-img img:hover {
+  transform: scale(1.03);
+}
+
+/* ── Gallery thumbnails ── */
+.gallery {
+  flex-shrink: 0;
+  border-top: 1px solid var(--gray-2);
+  background: var(--black);
+  padding: 12px 16px;
+}
+
+.gallery__thumbs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.gallery__thumbs::-webkit-scrollbar { display: none; }
+
+.gallery__thumb {
+  flex-shrink: 0;
+  width: 80px;
+  height: 56px;
+  overflow: hidden;
+  cursor: pointer;
+  opacity: 0.55;
+  border: 1px solid transparent;
+  transition: opacity 0.2s, border-color 0.2s;
+}
+
+.gallery__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery__thumb:hover,
+.gallery__thumb.active {
+  opacity: 1;
+  border-color: var(--white);
+}
+
+/* ── Right: Info panel ── */
+.car-detail__right {
+  padding: 48px 52px 80px;
+  border-left: 1px solid var(--gray-2);
+  min-height: calc(100vh - var(--nav-h));
+}
+
+/* Back link */
+.car-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-3);
+  text-decoration: none;
+  margin-bottom: 32px;
+  transition: color var(--transition);
+}
+.car-back:hover { color: var(--white); }
+
+/* Badges */
+.car-detail__badges {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.cd-badge {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border: 1px solid var(--gray-2);
+}
+
+.cd-badge--loc {
+  color: var(--white);
+  border-color: var(--gray-3);
+}
+
+.cd-badge--cat {
+  color: var(--gray-4);
+  border-color: var(--gray-2);
+}
+
+/* Make / Model */
+.car-detail__make {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+  margin-bottom: 8px;
+}
+
+.car-detail__model {
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+/* Price */
+.car-detail__price {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid var(--gray-2);
+}
+
+.cd-price-num {
+  font-family: var(--font-mono);
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.cd-price-unit {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--gray-4);
+}
+
+/* Specs grid */
+.car-detail__specs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin-bottom: 36px;
+}
+
+.cd-spec {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--gray-2);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cd-spec:nth-child(odd) {
+  padding-right: 24px;
+  border-right: 1px solid var(--gray-2);
+}
+.cd-spec:nth-child(even) {
+  padding-left: 24px;
+}
+
+.cd-spec__label {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-3);
+}
+
+.cd-spec__val {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+/* Reserve button */
+.cd-reserve {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  padding: 18px 28px;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 16px;
+}
+
+/* Call link */
+.cd-call {
+  display: block;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+  text-decoration: none;
+  padding: 12px;
+  border: 1px solid var(--gray-2);
+  transition: color var(--transition), border-color var(--transition);
+}
+.cd-call:hover {
+  color: var(--white);
+  border-color: var(--gray-4);
+}
+
+/* ── Responsive ── */
+@media (max-width: 1100px) {
+  .car-detail__model {
+    font-size: 2rem;
+  }
+  .car-detail__right {
+    padding: 36px 36px 60px;
+  }
+}
+
+@media (max-width: 900px) {
+  .car-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .car-detail__left {
+    position: relative;
+    top: auto;
+    height: auto;
+    min-height: 56vw;
+  }
+
+  .car-detail__main-img {
+    min-height: 56vw;
+  }
+
+  .car-detail__right {
+    border-left: none;
+    border-top: 1px solid var(--gray-2);
+    min-height: auto;
+    padding: 32px 24px 60px;
+  }
+
+  .car-detail__model {
+    font-size: 1.8rem;
+  }
+
+  .cd-price-num {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .car-detail__specs {
+    grid-template-columns: 1fr;
+  }
+
+  .cd-spec:nth-child(odd) {
+    border-right: none;
+    padding-right: 0;
+  }
+  .cd-spec:nth-child(even) {
+    padding-left: 0;
+  }
+}
+
+/* ── Minimum rental notice (Arizona only) ── */
+.cd-min-notice {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+  border: 1px solid var(--gray-2);
+  padding: 10px 14px;
+  margin-bottom: 28px;
+}

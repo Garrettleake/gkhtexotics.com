@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fleet — GKHT Exotics</title>
+  <meta name="description" content="Browse the GKHT Exotics collection of exotic and luxury rental vehicles." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="fleet.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__logo">
+        <img src="logo.svg" alt="GKHT" class="nav__logo-img">
+        <span>Exotics</span>
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html"   class="nav__link">Home</a></li>
+        <li><a href="fleet.html"   class="nav__link">Fleet</a></li>
+        <li><a href="about.html"   class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link">Contact</a></li>
+      </ul>
+      <a href="contact.html" class="nav__cta">Book Now</a>
+      <button class="nav__hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"   class="nav__link">Home</a>
+    <a href="fleet.html"   class="nav__link">Fleet</a>
+    <a href="about.html"   class="nav__link">About</a>
+    <a href="contact.html" class="nav__link">Contact</a>
+    <a href="contact.html" class="btn btn--outline" style="margin-top:16px;">Book Now</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero">
+    <div class="container">
+      <p class="label">The Collection</p>
+      <h1>Our Fleet</h1>
+      <p class="page-hero__sub">Every vehicle hand-selected for performance, presence, and pure exhilaration.</p>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <div class="fleet-bar">
+    <div class="container fleet-bar__inner">
+
+      <div class="fleet-bar__group">
+        <button class="loc-btn active" data-loc="all">All Cities</button>
+        <button class="loc-btn" data-loc="miami">Miami</button>
+        <button class="loc-btn" data-loc="la">Los Angeles</button>
+        <button class="loc-btn" data-loc="sf">San Francisco</button>
+        <button class="loc-btn" data-loc="arizona">Arizona</button>
+      </div>
+
+      <div class="fleet-bar__group">
+        <button class="cat-btn active" data-cat="all">All Types</button>
+        <button class="cat-btn" data-cat="supercar">Supercar</button>
+        <button class="cat-btn" data-cat="luxury">Luxury</button>
+        <button class="cat-btn" data-cat="suv">SUV</button>
+        <button class="cat-btn" data-cat="van">Van</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- COUNT + SORT -->
+  <div class="fleet-meta">
+    <div class="container fleet-meta__inner">
+      <p id="fleet-count" class="fleet-count">56 vehicles available</p>
+      <div class="fleet-sort">
+        <span class="sort-label">Sort by price:</span>
+        <button class="sort-btn active" data-sort="default">Default</button>
+        <button class="sort-btn" data-sort="asc">Low &rarr; High</button>
+        <button class="sort-btn" data-sort="desc">High &rarr; Low</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLEET GRID -->
+  <section class="fleet-section">
+    <div class="container">
+      <div class="fleet-grid" id="fleet-grid">
+
+        <article class="fleet-card" data-href="cars/miami-mercedes-benz-s580.html" fade-in" data-location="miami" data-category="luxury" data-price="600">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/s580-C6HDa1G7.jpg" alt="MERCEDES-BENZ S580" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-BENZ</span>
+              <span class="fleet-card__price">$600<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">S580</h2>
+            <div class="fleet-card__specs">
+              <span>496 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Burmester 4D Audio</span>
+              </div>
+              <a href="cars/miami-mercedes-benz-s580.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-mercedes-maybach-gls-600.html" fade-in" data-location="miami" data-category="luxury" data-price="1000">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.com/cars/maybachgls-1.jpeg" alt="MERCEDES-MAYBACH GLS 600" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-MAYBACH</span>
+              <span class="fleet-card__price">$1,000<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">GLS 600</h2>
+            <div class="fleet-card__specs">
+              <span>550 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.8s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Rear Seat Entertainment</span>
+              </div>
+              <a href="cars/miami-mercedes-maybach-gls-600.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-rolls-royce-cullinan.html" fade-in" data-location="miami" data-category="luxury" data-price="1100">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/cullinan.jpg" alt="ROLLS-ROYCE Cullinan" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$1,100<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cullinan</h2>
+            <div class="fleet-card__specs">
+              <span>563 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.8s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Starlight Headliner</span>
+              </div>
+              <a href="cars/miami-rolls-royce-cullinan.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-rolls-royce-cullinan-mansory.html" fade-in" data-location="miami" data-category="luxury" data-price="1700">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/mansory-cullinan-KriO_aXr.jpg" alt="ROLLS-ROYCE Cullinan Mansory" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$1,700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cullinan Mansory</h2>
+            <div class="fleet-card__specs">
+              <span>632 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Mansory Wide Body</span>
+              </div>
+              <a href="cars/miami-rolls-royce-cullinan-mansory.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-chevrolet-corvette-c8.html" fade-in" data-location="miami" data-category="supercar" data-price="550">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/corvette-c8-D6ZwQ4Tr.jpg" alt="CHEVROLET Corvette C8" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CHEVROLET</span>
+              <span class="fleet-card__price">$550<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Corvette C8</h2>
+            <div class="fleet-card__specs">
+              <span>490 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>194 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Magnetic Ride Control</span>
+              </div>
+              <a href="cars/miami-chevrolet-corvette-c8.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-chevrolet-corvette-z06.html" fade-in" data-location="miami" data-category="supercar" data-price="700">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/3mJ4H2zC/2017-chevrolet-13-k-mile-corvette-z06-z07-7-speed-162446432981bc714.webp" alt="CHEVROLET Corvette Z06" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CHEVROLET</span>
+              <span class="fleet-card__price">$700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Corvette Z06</h2>
+            <div class="fleet-card__specs">
+              <span>670 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>195 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Torch Red</span>
+              </div>
+              <a href="cars/miami-chevrolet-corvette-z06.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article></article>
+        <article class="fleet-card" data-href="cars/miami-porsche-911-carrera-gts.html" fade-in" data-location="miami" data-category="supercar" data-price="850">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/porsche-911-DIBD2OpQ.jpg" alt="PORSCHE 911 Carrera GTS" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">PORSCHE</span>
+              <span class="fleet-card__price">$850<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">911 Carrera GTS</h2>
+            <div class="fleet-card__specs">
+              <span>473 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.1s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>193 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Sport Chrono Package</span>
+              </div>
+              <a href="cars/miami-porsche-911-carrera-gts.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-porsche-911-gt3.html" fade-in" data-location="miami" data-category="supercar" data-price="1100">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/porsche-gt3-DzeGhnqw.jpg" alt="PORSCHE 911 GT3" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">PORSCHE</span>
+              <span class="fleet-card__price">$1,100<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">911 GT3</h2>
+            <div class="fleet-card__specs">
+              <span>502 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.2s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>197 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Carbon Ceramic Brakes</span>
+              </div>
+              <a href="cars/miami-porsche-911-gt3.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-porsche-911-turbo-s-widebody.html" fade-in" data-location="miami" data-category="supercar" data-price="1150">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/porsche-911-DIBD2OpQ.jpg" alt="PORSCHE 911 Turbo S Widebody" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">PORSCHE</span>
+              <span class="fleet-card__price">$1,150<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">911 Turbo S Widebody</h2>
+            <div class="fleet-card__specs">
+              <span>640 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>205 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Tuned Widebody</span>
+              </div>
+              <a href="cars/miami-porsche-911-turbo-s-widebody.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-ferrari-488-gtb.html" fade-in" data-location="miami" data-category="supercar" data-price="1200">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/ferrari-488-mia-CuONLya4.jpg" alt="FERRARI 488 GTB" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">FERRARI</span>
+              <span class="fleet-card__price">$1,200<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">488 GTB</h2>
+            <div class="fleet-card__specs">
+              <span>661 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.0s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>205 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Carbon Fiber Package</span>
+              </div>
+              <a href="cars/miami-ferrari-488-gtb.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-lamborghini-huracan-stage-2.html" fade-in" data-location="miami" data-category="supercar" data-price="1300">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.com/cars/huracan-stage2.jpg" alt="LAMBORGHINI Huracan Stage 2" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,300<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Huracan Stage 2</h2>
+            <div class="fleet-card__specs">
+              <span>700 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>210 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Stage 2 Tune</span>
+              </div>
+              <a href="cars/miami-lamborghini-huracan-stage-2.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-porsche-macan.html" fade-in" data-location="miami" data-category="suv" data-price="400">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/porsche-macan-CZtOOYv9.jpg" alt="PORSCHE Macan" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">PORSCHE</span>
+              <span class="fleet-card__price">$400<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Macan</h2>
+            <div class="fleet-card__specs">
+              <span>375 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>159 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Sport Chrono Package</span>
+              </div>
+              <a href="cars/miami-porsche-macan.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-lamborghini-urus-black.html" fade-in" data-location="miami" data-category="suv" data-price="1000">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/urus-black-n92XLqu_.jpg" alt="LAMBORGHINI Urus (Black)" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,000<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus (Black)</h2>
+            <div class="fleet-card__specs">
+              <span>641 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Package</span>
+              </div>
+              <a href="cars/miami-lamborghini-urus-black.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/miami-lamborghini-urus-white.html" fade-in" data-location="miami" data-category="suv" data-price="1000">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/assets/urus-white-BzPoL2nu.jpg" alt="LAMBORGHINI Urus (White)" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">MIA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,000<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus (White)</h2>
+            <div class="fleet-card__specs">
+              <span>641 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Package</span>
+              </div>
+              <a href="cars/miami-lamborghini-urus-white.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/sf-tesla-model-3.html" fade-in" data-location="sf" data-category="luxury" data-price="320">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.com/cars/tesla-model-3-sf.jpg" alt="TESLA Model 3" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">SF</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">TESLA</span>
+              <span class="fleet-card__price">$320<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Model 3</h2>
+            <div class="fleet-card__specs">
+              <span>346 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.2s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>145 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Autopilot</span>
+              </div>
+              <a href="cars/sf-tesla-model-3.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/sf-bmw-m4-competition.html" fade-in" data-location="sf" data-category="supercar" data-price="650">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.com/cars/bmw-m4-sf.jpg" alt="BMW M4 Competition" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">SF</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">M4 Competition</h2>
+            <div class="fleet-card__specs">
+              <span>503 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>180 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Fiber Roof</span>
+              </div>
+              <a href="cars/sf-bmw-m4-competition.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/sf-chevrolet-corvette-c8.html" fade-in" data-location="sf" data-category="supercar" data-price="650">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/corvette-c8.jpg" alt="CHEVROLET Corvette C8" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">SF</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CHEVROLET</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Corvette C8</h2>
+            <div class="fleet-card__specs">
+              <span>490 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>194 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Magnetic Ride Control</span>
+              </div>
+              <a href="cars/sf-chevrolet-corvette-c8.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/sf-lamborghini-urus-yellow.html" fade-in" data-location="sf" data-category="suv" data-price="1100">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/urus-yellow.jpg" alt="LAMBORGHINI Urus (Yellow)" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">SF</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,100<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus (Yellow)</h2>
+            <div class="fleet-card__specs">
+              <span>641 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Package</span>
+              </div>
+              <a href="cars/sf-lamborghini-urus-yellow.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-760i.html" fade-in" data-location="la" data-category="luxury" data-price="600">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/m5RRwMfX/070643c71ce44abeb6fa461308e0e2d5.jpg" alt="BMW 760i xDrive" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$600<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">760i xDrive</h2>
+            <div class="fleet-card__specs">
+              <span>536 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.0s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Executive Lounge</span>
+              </div>
+              <a href="cars/la-bmw-760i.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-mercedes-amg-cle53-convertible.html" fade-in" data-location="la" data-category="luxury" data-price="600">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/pBnSQgzD/2025-Mercedes-AMG-CLE-53-Cabriolet-003-1600.avif" alt="MERCEDES-AMG CLE53 Convertible" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-AMG</span>
+              <span class="fleet-card__price">$600<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">CLE53 Convertible</h2>
+            <div class="fleet-card__specs">
+              <span>443 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.1s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>174 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Convertible Soft Top</span>
+              </div>
+              <a href="cars/la-mercedes-amg-cle53-convertible.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-mercedes-maybach-s580.html" fade-in" data-location="la" data-category="luxury" data-price="650">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/jZBxbGfq/s580.jpg" alt="MERCEDES-MAYBACH S580" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-MAYBACH</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">S580</h2>
+            <div class="fleet-card__specs">
+              <span>496 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Executive Rear Suite</span>
+              </div>
+              <a href="cars/la-joon-mercedes-maybach-s580.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-rolls-royce-ghost-black-badge.html" fade-in" data-location="la" data-category="luxury" data-price="1400">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/0jFYY4zz/Used-2022-Rolls-Royce-Ghost-Black-Badge-1735946525.jpg" alt="ROLLS-ROYCE Ghost Black Badge" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$1,400<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Ghost Black Badge</h2>
+            <div class="fleet-card__specs">
+              <span>591 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Black Badge Trim</span>
+              </div>
+              <a href="cars/la-rolls-royce-ghost-black-badge.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-rolls-royce-cullinan-mansory-widebody.html" fade-in" data-location="la" data-category="luxury" data-price="1950">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/20ChZJCR/Used-2020-Rolls-Royce-Cullinan-MANSORY-Widebody-Jackson-MS.jpg" alt="ROLLS-ROYCE Cullinan Mansory Widebody" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$1,950<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cullinan Mansory Widebody</h2>
+            <div class="fleet-card__specs">
+              <span>680 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Mansory Widebody Kit</span>
+              </div>
+              <a href="cars/la-rolls-royce-cullinan-mansory-widebody.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-dodge-charger-hellcat.html" fade-in" data-location="la" data-category="supercar" data-price="700">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/hellcat-charger.jpg" alt="DODGE Charger Hellcat Widebody" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">DODGE</span>
+              <span class="fleet-card__price">$700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Charger Hellcat Widebody</h2>
+            <div class="fleet-card__specs">
+              <span>717 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>203 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Widebody Kit</span>
+              </div>
+              <a href="cars/la-dodge-charger-hellcat.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-chevrolet-corvette-z06.html" fade-in" data-location="la" data-category="supercar" data-price="850">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/gFrswCyN/b3idjlq1za141.jpg" alt="CHEVROLET Corvette Z06" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CHEVROLET</span>
+              <span class="fleet-card__price">$850<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">C8 Corvette Z06</h2>
+            <div class="fleet-card__specs">
+              <span>670 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>195 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Rapid Blue</span>
+              </div>
+              <a href="cars/la-joon-chevrolet-corvette-z06.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article></article>
+        <article class="fleet-card" data-href="cars/la-dodge-durango-hellcat-joon.html" fade-in" data-location="la" data-category="suv" data-price="700">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/hellcat-durango.jpg" alt="DODGE Durango Hellcat" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">DODGE</span>
+              <span class="fleet-card__price">$700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Durango Hellcat</h2>
+            <div class="fleet-card__specs">
+              <span>710 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>180 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Launch Control</span>
+              </div>
+              <a href="cars/la-dodge-durango-hellcat-joon.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-lamborghini-urus.html" fade-in" data-location="la" data-category="suv" data-price="1100">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/urus.jpg" alt="LAMBORGHINI Urus" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,100<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus</h2>
+            <div class="fleet-card__specs">
+              <span>641 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Package</span>
+              </div>
+              <a href="cars/la-joon-lamborghini-urus.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-lamborghini-urus-widebody.html" fade-in" data-location="la" data-category="suv" data-price="1200">
+          <div class="fleet-card__image">
+            <img src="https://joon11ee.lovable.app/images/fleet/urus-widebody.jpg" alt="LAMBORGHINI Urus Widebody" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,200<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus Widebody</h2>
+            <div class="fleet-card__specs">
+              <span>666 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.3s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Widebody Aero Kit</span>
+              </div>
+              <a href="cars/la-joon-lamborghini-urus-widebody.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-3-series-2026.html" fade-in" data-location="la" data-category="luxury" data-price="450">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/160411_Xt1qaWCBzT1g12QHjlx48VDpmI2s7imHBdR4t60x.jpg" alt="BMW 3 Series 2026" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$450<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">3 Series 2026</h2>
+            <div class="fleet-card__specs">
+              <span>255 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>5.1s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Sport Package</span>
+              </div>
+              <a href="cars/la-bmw-3-series-2026.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-5-series-2026.html" fade-in" data-location="la" data-category="luxury" data-price="550">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/V0QrddFd/bmw550e-frontquarter.webp" alt="BMW 5 Series 2026" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$550<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">5 Series 2026</h2>
+            <div class="fleet-card__specs">
+              <span>375 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.3s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Executive Package</span>
+              </div>
+              <a href="cars/la-bmw-5-series-2026.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-m5-g90.html" fade-in" data-location="la" data-category="luxury" data-price="650">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/190481_kKtBtOEv2RBZDRgZOnp7OdPkcJNt7QWvgvxyildJ.jpg" alt="BMW M5 G90" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">M5 G90</h2>
+            <div class="fleet-card__specs">
+              <span>727 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>189 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">M Competition Package</span>
+              </div>
+              <a href="cars/la-bmw-m5-g90.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-m8-competition.html" fade-in" data-location="la" data-category="luxury" data-price="750">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159067_zE94No86cdnnfH7KxN0cqEibin1WoOUA0dgwdV29.jpg" alt="BMW M8 Competition" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$750<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">M8 Competition</h2>
+            <div class="fleet-card__specs">
+              <span>617 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.0s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">M Carbon Exterior</span>
+              </div>
+              <a href="cars/la-bmw-m8-competition.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-m8-convertible.html" fade-in" data-location="la" data-category="luxury" data-price="750">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/PZG1W7VZ/Screenshot-2026-06-16-200521.png" alt="BMW M8 Competition Convertible" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$750<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">M8 Competition Convertible</h2>
+            <div class="fleet-card__specs">
+              <span>617 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.0s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">M Carbon Convertible</span>
+              </div>
+              <a href="cars/la-bmw-m8-convertible.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-vem-mercedes-maybach-s580.html" fade-in" data-location="la" data-category="luxury" data-price="850">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/WvXNty54/Screenshot-2026-06-16-200059.png" alt="MERCEDES-MAYBACH S580" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-MAYBACH</span>
+              <span class="fleet-card__price">$850<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">S580</h2>
+            <div class="fleet-card__specs">
+              <span>496 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Maybach Executive Package</span>
+              </div>
+              <a href="cars/la-vem-mercedes-maybach-s580.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-vem-mercedes-maybach-gls-600.html" fade-in" data-location="la" data-category="luxury" data-price="850">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/161038_bXtT8hZbhS0OcWwmi5LuVThvEhrUuVpfs19ROqWu.png" alt="MERCEDES-MAYBACH GLS 600" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-MAYBACH</span>
+              <span class="fleet-card__price">$850<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">GLS 600</h2>
+            <div class="fleet-card__specs">
+              <span>550 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.8s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Rear Executive Suite</span>
+              </div>
+              <a href="cars/la-vem-mercedes-maybach-gls-600.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-mercedes-maybach-sl-680.html" fade-in" data-location="la" data-category="luxury" data-price="1050">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159067_wTX6hcXnEHDLYg8bcAyyWWjimAi4A2yPdHMwHh1z.jpg" alt="MERCEDES-MAYBACH SL 680" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-MAYBACH</span>
+              <span class="fleet-card__price">$1,050<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">SL 680</h2>
+            <div class="fleet-card__specs">
+              <span>577 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Open-Air Luxury</span>
+              </div>
+              <a href="cars/la-mercedes-maybach-sl-680.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-vem-rolls-royce-ghost.html" fade-in" data-location="la" data-category="luxury" data-price="1500">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/yFXMg2ZJ/Screenshot-2026-06-16-200434.png" alt="ROLLS-ROYCE Ghost" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$1,500<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Ghost</h2>
+            <div class="fleet-card__specs">
+              <span>563 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Black Badge Trim</span>
+              </div>
+              <a href="cars/la-vem-rolls-royce-ghost.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-rolls-royce-cullinan-2026.html" fade-in" data-location="la" data-category="luxury" data-price="2000">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194446_Tb1gsKXzlCtRwCRcTxZR86CflOxVg0IyPnfIdttW.png" alt="ROLLS-ROYCE Cullinan 2026" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$2,000<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cullinan 2026</h2>
+            <div class="fleet-card__specs">
+              <span>591 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.8s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Starlight Headliner</span>
+              </div>
+              <a href="cars/la-rolls-royce-cullinan-2026.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-rolls-royce-spectre.html" fade-in" data-location="la" data-category="luxury" data-price="2000">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194444_xSsSiHm2hGRMzsRCCjoNSl4Jxiyv5JmrTSsOy1Kd.jpg" alt="ROLLS-ROYCE Spectre" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$2,000<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Spectre</h2>
+            <div class="fleet-card__specs">
+              <span>577 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Electric Grand Tourer</span>
+              </div>
+              <a href="cars/la-rolls-royce-spectre.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-rolls-royce-cullinan-black-badge.html" fade-in" data-location="la" data-category="luxury" data-price="2300">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/192041_esMXgLBj2qpupMF17yiBycj5yJ3oyQSPXGVi2qDk.jpg" alt="ROLLS-ROYCE Cullinan Black Badge 2026" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">ROLLS-ROYCE</span>
+              <span class="fleet-card__price">$2,300<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cullinan Black Badge 2026</h2>
+            <div class="fleet-card__specs">
+              <span>591 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.8s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Black Badge Dark Theme</span>
+              </div>
+              <a href="cars/la-rolls-royce-cullinan-black-badge.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-bmw-m3-g80.html" fade-in" data-location="la" data-category="supercar" data-price="650">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194445_JA5xpDE7S7akVI6WUbIZnkh8aabxMJKLegg6mDFR.jpg" alt="BMW M3 G80" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">BMW</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">M3 G80</h2>
+            <div class="fleet-card__specs">
+              <span>503 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>180 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">M Competition xDrive</span>
+              </div>
+              <a href="cars/la-bmw-m3-g80.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card fade-in" data-location="la" data-category="supercar" data-price="650" data-href="cars/la-vem-chevrolet-corvette-c8.html">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/144619_2EDbj8CiUZyisyLBzfsMkj3lpbTbeBnWVqLC65Eb.jpg" alt="CHEVROLET Corvette C8" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CHEVROLET</span>
+              <span class="fleet-card__price">$650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Corvette C8</h2>
+            <div class="fleet-card__specs">
+              <span>490 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>194 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Magnetic Ride Control</span>
+              </div>
+              <a href="cars/la-vem-chevrolet-corvette-c8.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-ferrari-296-gtb.html" fade-in" data-location="la" data-category="supercar" data-price="1650">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194442_8Rb1XYtuMLFPJdUZTEhAb6V8IY07fVRnnOITqqjd.png" alt="FERRARI 296 GTB" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">FERRARI</span>
+              <span class="fleet-card__price">$1,650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">296 GTB</h2>
+            <div class="fleet-card__specs">
+              <span>819 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>205 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Plug-In Hybrid V6</span>
+              </div>
+              <a href="cars/la-ferrari-296-gtb.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-lamborghini-huracan-tecnica.html" fade-in" data-location="la" data-category="supercar" data-price="1650">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194441_VjhxgLeMBVTls3xHgFW2unM6FcnM5BtTsaM589BI.png" alt="LAMBORGHINI Huracan Tecnica" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUPERCAR</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,650<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Huracan Tecnica</h2>
+            <div class="fleet-card__specs">
+              <span>631 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.2s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>202 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Rear-Wheel Drive Pure</span>
+              </div>
+              <a href="cars/la-lamborghini-huracan-tecnica.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-dodge-durango-hellcat-joon.html" fade-in" data-location="la" data-category="suv" data-price="700">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/188848_Xn4DYIXfwrjRxhIYaCqhF4G8vv3zZ1LuuXPRpskE.jpg" alt="DODGE Durango Hellcat" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">DODGE</span>
+              <span class="fleet-card__price">$700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Durango Hellcat</h2>
+            <div class="fleet-card__specs">
+              <span>710 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>180 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Launch Control</span>
+              </div>
+              <a href="cars/la-dodge-durango-hellcat-joon.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-gmc-denali-xl.html" fade-in" data-location="la" data-category="suv" data-price="700">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159619_12KWViEVw7RHOdrGecLztImGnkvG3GIfDctuBsa7.jpg" alt="GMC Denali XL 2026" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">GMC</span>
+              <span class="fleet-card__price">$700<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Denali XL 2026</h2>
+            <div class="fleet-card__specs">
+              <span>420 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>5.0s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Super Cruise</span>
+              </div>
+              <a href="cars/la-gmc-denali-xl.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-range-rover-2025.html" fade-in" data-location="la" data-category="suv" data-price="750">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/191947_vIsDljqd8TgiszfcgWl4U1jdmSJl2Sru7mT300L7.jpg" alt="RANGE ROVER 2025" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">RANGE ROVER</span>
+              <span class="fleet-card__price">$750<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">2025</h2>
+            <div class="fleet-card__specs">
+              <span>523 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">First Edition Package</span>
+              </div>
+              <a href="cars/la-range-rover-2025.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-tesla-cybertruck.html" fade-in" data-location="la" data-category="suv" data-price="900">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/kVgKjVrd/tesla-cybertruck-review-2024-01-front-tracking.jpg" alt="TESLA Cybertruck" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">TESLA</span>
+              <span class="fleet-card__price">$900<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Cybertruck</h2>
+            <div class="fleet-card__specs">
+              <span>845 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>2.7s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Cyberbeast Edition</span>
+              </div>
+              <a href="cars/la-tesla-cybertruck.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-mercedes-g63.html" fade-in" data-location="la" data-category="suv" data-price="950">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/158711_VWQWxw4rc0Qs6k7vSn3Ni4pR7zzqZwoYMkqTZg9X.jpg" alt="MERCEDES-AMG G63 2025" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-AMG</span>
+              <span class="fleet-card__price">$950<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">G63 2025</h2>
+            <div class="fleet-card__specs">
+              <span>577 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>137 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">AMG Night Package</span>
+              </div>
+              <a href="cars/la-mercedes-g63.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-lamborghini-urus.html" fade-in" data-location="la" data-category="suv" data-price="1100">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/116490_fngNBgeAPeqx5PoOkwspFlmBPZXHqx6Oz6fqSIbx.jpg" alt="LAMBORGHINI Urus" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,100<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus</h2>
+            <div class="fleet-card__specs">
+              <span>641 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Carbon Package</span>
+              </div>
+              <a href="cars/la-joon-lamborghini-urus.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-joon-lamborghini-urus-widebody.html" fade-in" data-location="la" data-category="suv" data-price="1200">
+          <div class="fleet-card__image">
+            <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159050_Qrd6bjslUkabo1OpW35VD4NDYViXUIx3owa79RN8.jpg" alt="LAMBORGHINI Urus Widebody" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">LAMBORGHINI</span>
+              <span class="fleet-card__price">$1,200<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Urus Widebody</h2>
+            <div class="fleet-card__specs">
+              <span>666 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>3.3s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>190 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Widebody Aero Kit</span>
+              </div>
+              <a href="cars/la-joon-lamborghini-urus-widebody.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/la-mercedes-sprinter.html" fade-in" data-location="la" data-category="van" data-price="550">
+          <div class="fleet-card__image">
+            <img src="https://i.ibb.co/3b7dWQc/Screenshot-2026-06-16-200637.png" alt="MERCEDES Sprinter (Driver Incl.)" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">LA</span>
+              <span class="fc-badge fc-badge--cat">VAN</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES</span>
+              <span class="fleet-card__price">$550<span class="fleet-card__price-unit">/hr</span></span>
+            </div>
+            <h2 class="fleet-card__model">Sprinter (Driver Incl.)</h2>
+            <div class="fleet-card__specs">
+              <span>—</span>
+              <span class="fc-dot">&bull;</span>
+              <span>—</span>
+              <span class="fc-dot">&bull;</span>
+              <span>—</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">RWD</span>
+                <span class="fc-tag">Driver Included · 4hr Min</span>
+              </div>
+              <a href="cars/la-mercedes-sprinter.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/az-mercedes-benz-s580.html" fade-in" data-location="arizona" data-category="luxury" data-price="445">
+          <div class="fleet-card__image">
+            <img src="https://static.wixstatic.com/media/32b944_5358be8f4e424808a14477c31c9ba9c1~mv2.jpg" alt="MERCEDES-BENZ S580" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">AZ</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-BENZ</span>
+              <span class="fleet-card__price">$445<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">S580</h2>
+            <div class="fleet-card__specs">
+              <span>496 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.4s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Burmester Surround Sound</span>
+              </div>
+              <a href="cars/az-mercedes-benz-s580.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/az-cadillac-escalade.html" fade-in" data-location="arizona" data-category="luxury" data-price="445">
+          <div class="fleet-card__image">
+            <img src="https://static.wixstatic.com/media/32b944_6b949ae3e29d415682591e960cf4ac21~mv2.jpg" alt="CADILLAC Escalade" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">AZ</span>
+              <span class="fc-badge fc-badge--cat">LUXURY</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">CADILLAC</span>
+              <span class="fleet-card__price">$445<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">Escalade</h2>
+            <div class="fleet-card__specs">
+              <span>420 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>5.6s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>130 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">Super Cruise ADAS</span>
+              </div>
+              <a href="cars/az-cadillac-escalade.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/az-mercedes-gle53.html" fade-in" data-location="arizona" data-category="suv" data-price="425">
+          <div class="fleet-card__image">
+            <img src="https://static.wixstatic.com/media/32b944_56a3ce67192e4d8eba829dd605b92bea~mv2.jpg" alt="MERCEDES-BENZ GLE53 AMG" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">AZ</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-BENZ</span>
+              <span class="fleet-card__price">$425<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">GLE53 AMG</h2>
+            <div class="fleet-card__specs">
+              <span>429 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.9s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>155 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">AMG Dynamic Package</span>
+              </div>
+              <a href="cars/az-mercedes-gle53.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+        <article class="fleet-card" data-href="cars/az-mercedes-g63.html" fade-in" data-location="arizona" data-category="suv" data-price="825">
+          <div class="fleet-card__image">
+            <img src="https://static.wixstatic.com/media/32b944_b15994ef81474fd8932522a8111ec01c~mv2.jpg" alt="MERCEDES-BENZ G63 AMG" loading="lazy"
+                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+            <div class="fleet-card__placeholder" style="display:none"><span>Photo Coming Soon</span></div>
+            <div class="fleet-card__badges">
+              <span class="fc-badge fc-badge--loc">AZ</span>
+              <span class="fc-badge fc-badge--cat">SUV</span>
+            </div>
+          </div>
+          <div class="fleet-card__body">
+            <div class="fleet-card__row1">
+              <span class="fleet-card__make">MERCEDES-BENZ</span>
+              <span class="fleet-card__price">$825<span class="fleet-card__price-unit">/day</span></span>
+            </div>
+            <h2 class="fleet-card__model">G63 AMG</h2>
+            <div class="fleet-card__specs">
+              <span>577 HP</span>
+              <span class="fc-dot">&bull;</span>
+              <span>4.5s</span>
+              <span class="fc-dot">&bull;</span>
+              <span>137 mph</span>
+            </div>
+            <div class="fleet-card__footer">
+              <div class="fleet-card__tags">
+                <span class="fc-tag">AWD</span>
+                <span class="fc-tag">AMG Night Package</span>
+              </div>
+              <a href="cars/az-mercedes-g63.html" class="fc-inquire">View</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="cta-band" style="border-top: 1px solid var(--gray-2);">
+    <div class="container cta-band__inner fade-in">
+      <div>
+        <p class="label">Don't see what you're looking for?</p>
+        <h2>We may have more<br>than what's listed.</h2>
+      </div>
+      <div class="cta-band__actions">
+        <a href="contact.html" class="btn btn--primary">Get In Touch</a>
+        <a href="tel:9284674003" class="btn btn--ghost">Call (928) 467-4003</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <p class="footer__logo">GKHT Exotics</p>
+          <p>Exotic and luxury car rentals across San Francisco, Los Angeles, Miami, and Arizona.</p>
+        </div>
+        <div class="footer__col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fleet.html">Fleet</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:9284674003">(928) 467-4003</a></li>
+            <li><a href="contact.html">Book Online</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="https://www.instagram.com/gkht/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@garrettleake" target="_blank" rel="noopener">TikTok</a></li>
+            <li><a href="https://x.com/aresgarrett" target="_blank" rel="noopener">Twitter / X</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 GKHT Exotics. All rights reserved.</p>
+        <p>gkhtexotics.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+
+    const locBtns  = document.querySelectorAll('.loc-btn');
+    const catBtns  = document.querySelectorAll('.cat-btn');
+    const sortBtns = document.querySelectorAll('.sort-btn');
+    const grid     = document.getElementById('fleet-grid');
+    const countEl  = document.getElementById('fleet-count');
+
+    let curLoc  = 'all';
+    let curCat  = 'all';
+    let curSort = 'default';
+
+    function allCards() {
+      return Array.from(grid.querySelectorAll('.fleet-card'));
+    }
+
+    function applyFilters() {
+      let visible = 0;
+      allCards().forEach(card => {
+        const locMatch = curLoc === 'all' || card.dataset.location === curLoc;
+        const catMatch = curCat === 'all' || card.dataset.category === curCat;
+        const show = locMatch && catMatch;
+        card.style.display = show ? '' : 'none';
+        if (show) visible++;
+      });
+      countEl.textContent = visible + ' vehicle' + (visible !== 1 ? 's' : '') + ' available';
+      applySort();
+    }
+
+    function applySort() {
+      if (curSort === 'default') return;
+      const visible = allCards().filter(c => c.style.display !== 'none');
+      const hidden  = allCards().filter(c => c.style.display === 'none');
+      visible.sort((a, b) => {
+        const pa = parseInt(a.dataset.price) || 0;
+        const pb = parseInt(b.dataset.price) || 0;
+        return curSort === 'asc' ? pa - pb : pb - pa;
+      });
+      visible.forEach(c => grid.appendChild(c));
+      hidden.forEach(c => grid.appendChild(c));
+    }
+
+    locBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        locBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        curLoc = btn.dataset.loc;
+        applyFilters();
+      });
+    });
+
+    catBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        catBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        curCat = btn.dataset.cat;
+        applyFilters();
+      });
+    });
+
+    sortBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        sortBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        curSort = btn.dataset.sort;
+        if (curSort === 'default') {
+          // restore DOM order then re-filter
+          allCards().sort((a,b) => parseInt(a.dataset.orig)||0 - parseInt(b.dataset.orig)||0);
+          applyFilters();
+        } else {
+          applySort();
+        }
+      });
+    });
+
+    // stamp original order
+    allCards().forEach((c, i) => c.dataset.orig = i);
+    applyFilters();
+
+  </script>
+
+  <script>
+    // Make entire fleet card clickable
+    document.querySelectorAll('.fleet-card[data-href]').forEach(card => {
+      card.addEventListener('click', e => {
+        if (!e.target.closest('a')) {
+          window.location.href = card.dataset.href;
+        }
+      });
+      card.style.cursor = 'pointer';
+    });
+  </script>
+</body>
+</html>

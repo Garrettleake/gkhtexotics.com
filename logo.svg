@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <!-- Black background -->
+  <rect width="500" height="500" fill="#000"/>
+
+  <!--
+    Layout: 4 quadrants separated by a 10px cross gap
+    Outer padding: 25px
+    Quadrant TL: (25,25)→(245,245)   G
+    Quadrant TR: (255,25)→(475,245)   K
+    Quadrant BL: (25,255)→(245,475)   H
+    Quadrant BR: (255,255)→(475,475)  T
+
+    Each letter sits on a 5×5 grid, cell = 30×30
+    Letter area: 150×150 centred in 220×220 quadrant → 35px padding each side
+    TL base: (60, 60)   TR base: (290, 60)
+    BL base: (60, 290)  BR base: (290, 290)
+  -->
+
+  <!-- ═══════════════════════════════════════
+       G  (top-left)
+       grid:
+         . X X X .
+         X . . . .
+         X . X X .
+         X . . . X
+         . X X X X
+  ═══════════════════════════════════════ -->
+
+  <!-- row 0, cols 1-3: (90,60) w=90 -->
+  <rect x="90"  y="60"  width="90"  height="30" fill="#fff"/>
+  <!-- col 0, rows 1-3: (60,90) h=90 -->
+  <rect x="60"  y="90"  width="30"  height="90" fill="#fff"/>
+  <!-- row 2, cols 2-3: (120,120) w=60 — inner shelf -->
+  <rect x="120" y="120" width="60"  height="30" fill="#fff"/>
+  <!-- row 3, col 4: (180,150) — bottom-right anchor -->
+  <rect x="180" y="150" width="30"  height="30" fill="#fff"/>
+  <!-- row 4, cols 1-4: (90,180) w=120 -->
+  <rect x="90"  y="180" width="120" height="30" fill="#fff"/>
+
+  <!-- ═══════════════════════════════════════
+       K  (top-right)
+       grid:
+         X . . . X
+         X . . X .
+         X X X . .
+         X . . X .
+         X . . . X
+  ═══════════════════════════════════════ -->
+
+  <!-- col 0, all rows: (290,60) h=150 -->
+  <rect x="290" y="60"  width="30"  height="150" fill="#fff"/>
+  <!-- row 0, col 4: (410,60) -->
+  <rect x="410" y="60"  width="30"  height="30"  fill="#fff"/>
+  <!-- row 1, col 3: (380,90) -->
+  <rect x="380" y="90"  width="30"  height="30"  fill="#fff"/>
+  <!-- row 2, cols 1-2: (320,120) w=60 — pivot -->
+  <rect x="320" y="120" width="60"  height="30"  fill="#fff"/>
+  <!-- row 3, col 3: (380,150) -->
+  <rect x="380" y="150" width="30"  height="30"  fill="#fff"/>
+  <!-- row 4, col 4: (410,180) -->
+  <rect x="410" y="180" width="30"  height="30"  fill="#fff"/>
+
+  <!-- ═══════════════════════════════════════
+       H  (bottom-left)
+       grid:
+         X . . . X
+         X . . . X
+         X X X X X
+         X . . . X
+         X . . . X
+  ═══════════════════════════════════════ -->
+
+  <!-- col 0, all rows: (60,290) h=150 -->
+  <rect x="60"  y="290" width="30"  height="150" fill="#fff"/>
+  <!-- col 4, all rows: (180,290) h=150 -->
+  <rect x="180" y="290" width="30"  height="150" fill="#fff"/>
+  <!-- row 2, cols 1-3: (90,350) w=90 — crossbar -->
+  <rect x="90"  y="350" width="90"  height="30"  fill="#fff"/>
+
+  <!-- ═══════════════════════════════════════
+       T  (bottom-right)
+       grid:
+         X X X X X
+         . . X . .
+         . . X . .
+         . . X . .
+         . . X . .
+  ═══════════════════════════════════════ -->
+
+  <!-- row 0, cols 0-4: (290,290) w=150 -->
+  <rect x="290" y="290" width="150" height="30"  fill="#fff"/>
+  <!-- col 2, rows 1-4: (350,320) h=120 — stem -->
+  <rect x="350" y="320" width="30"  height="120" fill="#fff"/>
+
+</svg>
