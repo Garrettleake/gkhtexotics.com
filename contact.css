@@ -40,7 +40,6 @@
 .contact-phone {
   font-size: 1.8rem;
   font-weight: 700;
-  font-family: var(--font-mono);
   color: var(--white);
   transition: color var(--transition);
   line-height: 1.1;
