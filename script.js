@@ -112,4 +112,29 @@ document.addEventListener('DOMContentLoaded', () => {
     ticker.innerHTML += ticker.innerHTML;
   }
 
+  /* ---- Whole fleet card is clickable ----
+     Lives here rather than inline on fleet.html so it also applies to the
+     city landing pages, which reuse the same card markup. The VIEW anchor
+     stays the crawlable link; this just widens the hit area to the image
+     and body. Clicks that land on a real <a> are left alone. */
+  document.querySelectorAll('.fleet-card[data-href]').forEach(card => {
+    card.style.cursor = 'pointer';
+    card.addEventListener('click', e => {
+      if (e.target.closest('a')) return;          // let real links behave normally
+      const href = card.dataset.href;
+      if (!href) return;
+      if (e.metaKey || e.ctrlKey || e.button === 1) {
+        window.open(href, '_blank', 'noopener');  // cmd/ctrl-click opens a new tab
+      } else {
+        window.location.href = href;
+      }
+    });
+    card.addEventListener('auxclick', e => {      // middle-click
+      if (e.button === 1 && !e.target.closest('a') && card.dataset.href) {
+        e.preventDefault();
+        window.open(card.dataset.href, '_blank', 'noopener');
+      }
+    });
+  });
+
 });

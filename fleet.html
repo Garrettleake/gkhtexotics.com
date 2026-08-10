@@ -2830,15 +2830,8 @@
   </script>
 
   <script>
-    // Make entire fleet card clickable
-    document.querySelectorAll('.fleet-card[data-href]').forEach(card => {
-      card.addEventListener('click', e => {
-        if (!e.target.closest('a')) {
-          window.location.href = card.dataset.href;
-        }
-      });
-      card.style.cursor = 'pointer';
-    });
+    // Whole-card click handling now lives in script.js so the city
+    // landing pages get it too.
   </script>
 </body>
 </html>
