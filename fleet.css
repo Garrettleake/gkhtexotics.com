@@ -262,6 +262,15 @@
   margin-left: 1px;
 }
 
+.fleet-card__price-was {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--gray-4);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+  margin-right: 6px;
+}
+
 /* Model name */
 .fleet-card__model {
   font-size: 1.35rem;

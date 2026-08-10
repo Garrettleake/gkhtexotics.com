@@ -2,12 +2,24 @@
    GKHT Exotics — Car Detail Page
    ============================================ */
 
+/* ── Nav ──
+   Car pages have no hero, so page content begins directly under the fixed
+   nav. Keep the bar solid from the start instead of waiting for .scrolled,
+   otherwise BOOK NOW floats over the content with no bar behind it. */
+.nav {
+  background: rgba(10, 10, 10, 0.92);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: var(--gray-2);
+}
+
 /* ── Layout ── */
 .car-detail {
   display: grid;
   grid-template-columns: 60% 1fr;
-  min-height: calc(100vh - var(--nav-h));
+  min-height: 100vh;
   align-items: start;
+  padding-top: var(--nav-h);
 }
 
 /* ── Left: Photo panel ── */
@@ -172,6 +184,17 @@
   color: var(--gray-4);
 }
 
+.cd-price-was {
+  font-family: var(--font-mono);
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--gray-4);
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+  margin-right: 10px;
+  letter-spacing: -0.02em;
+}
+
 /* Specs grid */
 .car-detail__specs {
   display: grid;
@@ -194,6 +217,13 @@
 }
 .cd-spec:nth-child(even) {
   padding-left: 24px;
+}
+
+/* Odd spec count leaves a lone cell in the left column — drop the divider
+   stub so the last row doesn't look cut off. */
+.cd-spec:last-child:nth-child(odd) {
+  border-right: none;
+  padding-right: 0;
 }
 
 .cd-spec__label {
@@ -258,7 +288,7 @@
   }
 
   .car-detail__left {
-    position: relative;
+    position: static;
     top: auto;
     height: auto;
     min-height: 56vw;

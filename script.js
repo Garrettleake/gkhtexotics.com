@@ -2,6 +2,41 @@
    GKHT Exotics — Global Scripts
    ============================================ */
 
+/* ---- Local preview shim ----
+   Links are extensionless (/fleet, /cars/az-gkht-bmw-m4) because GitHub Pages
+   resolves those to the .html file. Opening the files directly with file://
+   has no server to do that, so rewrite the links to real filenames.
+   Completely inert on the live site. */
+(function () {
+  if (window.location.protocol !== 'file:') return;
+
+  function toFile(u) {
+    if (!u) return u;
+    if (/^(https?:|mailto:|tel:|sms:|data:|javascript:|#)/i.test(u)) return u;
+    var hash = '', i = u.indexOf('#');
+    if (i > -1) { hash = u.slice(i); u = u.slice(0, i); }
+    if (u === '') return u + hash;
+    if (u.slice(-1) === '/') return u + 'index.html' + hash;   // "../"  -> "../index.html"
+    if (/\.[a-z0-9]+$/i.test(u)) return u + hash;              // already has an extension
+    return u + '.html' + hash;                                 // "../fleet" -> "../fleet.html"
+  }
+
+  function patch() {
+    document.querySelectorAll('a[href]').forEach(function (a) {
+      a.setAttribute('href', toFile(a.getAttribute('href')));
+    });
+    document.querySelectorAll('[data-href]').forEach(function (el) {
+      el.setAttribute('data-href', toFile(el.getAttribute('data-href')));
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', patch);
+  } else {
+    patch();
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ---- Nav: scroll class ---- */
@@ -14,13 +49,17 @@ document.addEventListener('DOMContentLoaded', () => {
     onScroll();
   }
 
-  /* ---- Nav: active link ---- */
-  const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+  /* ---- Nav: active link ----
+     Normalise both sides to a bare page name so it works for extensionless
+     URLs (/fleet), the served .html file, and local file:// previews. */
+  const pageName = p => {
+    const last = p.split('/').filter(Boolean).pop() || 'index';
+    return last.replace(/\.html$/, '').toLowerCase();
+  };
+  const current = pageName(window.location.pathname);
   document.querySelectorAll('.nav__link').forEach(link => {
-    const href = link.getAttribute('href');
-    if (href === currentPath || (currentPath === '' && href === 'index.html')) {
-      link.classList.add('active');
-    }
+    const target = pageName(link.getAttribute('href') || '');
+    if (target === current) link.classList.add('active');
   });
 
   /* ---- Mobile menu ---- */

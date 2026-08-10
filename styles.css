@@ -423,3 +423,13 @@ section {
   .footer__grid { grid-template-columns: 1fr; }
   .footer__bottom { flex-direction: column; gap: 12px; text-align: center; }
 }
+
+/* Ownership credit in the footer */
+.footer__owner {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  color: var(--gray-4);
+  margin-top: 14px;
+}
+.footer__owner strong { color: var(--gray-5); font-weight: 400; }

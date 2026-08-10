@@ -13,8 +13,46 @@
   <meta property="og:type" content="website" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://i.ibb.co/W4bjQTZ1/1.png" />
+  <link rel="canonical" href="https://gkhtexotics.com/" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="home.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoRental",
+    "@id": "https://gkhtexotics.com/#business",
+    "name": "GKHT Exotics",
+    "url": "https://gkhtexotics.com",
+    "logo": "https://gkhtexotics.com/logo.svg",
+    "image": "https://i.ibb.co/W4bjQTZ1/1.png",
+    "telephone": "+1-213-845-5211",
+    "description": "Exotic and luxury car rentals across San Francisco, Los Angeles, Miami, and Arizona.",
+    "areaServed": [
+      { "@type": "City", "name": "San Francisco" },
+      { "@type": "City", "name": "Los Angeles" },
+      { "@type": "City", "name": "Miami" },
+      { "@type": "City", "name": "Scottsdale" }
+    ],
+    "sameAs": [
+      "https://www.instagram.com/gkht/",
+      "https://www.tiktok.com/@garrettleake",
+      "https://x.com/aresgarrett"
+    ],
+    "founder": {
+      "@type": "Person",
+      "@id": "https://gkhtexotics.com/#garrett-leake",
+      "name": "Garrett Leake",
+      "jobTitle": "Founder & Owner",
+      "alternateName": "@gkht",
+      "url": "https://gkhtexotics.com/about",
+      "sameAs": [
+        "https://www.instagram.com/gkht/",
+        "https://www.tiktok.com/@garrettleake",
+        "https://x.com/aresgarrett"
+      ]
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -23,19 +61,19 @@
   ============================== -->
   <nav class="nav">
     <div class="container nav__inner">
-      <a href="/" class="nav__logo">
+      <a href="./" class="nav__logo">
         <img src="logo.svg" alt="GKHT" class="nav__logo-img">
         <span>Exotics</span>
       </a>
 
       <ul class="nav__links">
-        <li><a href="/"   class="nav__link">Home</a></li>
-        <li><a href="/fleet/"   class="nav__link">Fleet</a></li>
-        <li><a href="/about/"   class="nav__link">About</a></li>
-        <li><a href="/contact/" class="nav__link">Contact</a></li>
+        <li><a href="./"   class="nav__link">Home</a></li>
+        <li><a href="fleet"   class="nav__link">Fleet</a></li>
+        <li><a href="about"   class="nav__link">About</a></li>
+        <li><a href="contact" class="nav__link">Contact</a></li>
       </ul>
 
-      <a href="/contact/" class="nav__cta">Book Now</a>
+      <a href="contact" class="nav__cta">Book Now</a>
 
       <button class="nav__hamburger" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -45,11 +83,11 @@
 
   <!-- Mobile menu -->
   <div class="nav__mobile">
-    <a href="/"   class="nav__link">Home</a>
-    <a href="/fleet/"   class="nav__link">Fleet</a>
-    <a href="/about/"   class="nav__link">About</a>
-    <a href="/contact/" class="nav__link">Contact</a>
-    <a href="/contact/" class="btn btn--outline" style="margin-top:16px;">Book Now</a>
+    <a href="./"   class="nav__link">Home</a>
+    <a href="fleet"   class="nav__link">Fleet</a>
+    <a href="about"   class="nav__link">About</a>
+    <a href="contact" class="nav__link">Contact</a>
+    <a href="contact" class="btn btn--outline" style="margin-top:16px;">Book Now</a>
   </div>
 
   <!-- ==============================
@@ -64,13 +102,40 @@
       <h1 class="hero__title">Drive Without<br>Compromise.</h1>
       <p class="hero__sub">Select the world's most coveted machines —<br>delivered to your door.</p>
       <div class="hero__actions">
-        <a href="/fleet/" class="btn btn--primary">
+        <a href="fleet" class="btn btn--primary">
           View the Fleet
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
-        <a href="/contact/" class="btn btn--ghost">Reserve Now</a>
+        <a href="contact" class="btn btn--ghost">Reserve Now</a>
       </div>
     </div>
+
+    <!-- Featured vehicle — hero corner card -->
+    <a href="cars/az-gkht-bmw-m4" class="hero-featured" aria-label="Featured vehicle: BMW M4, from $250 per day in Scottsdale, Arizona">
+      <div class="hero-featured__img">
+        <img src="https://i.ibb.co/fdkWh4q1/1.png" alt="BMW M4 Frozen Metallic Red"
+             onerror="this.src='logo.svg'; this.style.objectFit='contain'; this.style.padding='30px'">
+        <span class="hero-featured__tag">Best Value &middot; Scottsdale</span>
+      </div>
+      <div class="hero-featured__body">
+        <div class="hero-featured__row">
+          <span class="hero-featured__make">BMW</span>
+          <span class="hero-featured__price"><span class="hero-featured__was">$450</span>$250<span class="hero-featured__unit">/day</span></span>
+        </div>
+        <h3 class="hero-featured__model">M4</h3>
+        <div class="hero-featured__specs">
+          <span>~600 HP</span>
+          <span class="fc-dot">&bull;</span>
+          <span>3.2s</span>
+          <span class="fc-dot">&bull;</span>
+          <span>Full Carbon</span>
+        </div>
+        <div class="hero-featured__cta">
+          <span>Our lowest daily rate</span>
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </a>
 
   </section>
 
@@ -113,7 +178,7 @@
         <p class="intro__body fade-in fade-in-delay-2">
           With locations in San Francisco, Los Angeles, Miami, and Arizona, GKHT Exotics curates a hand-selected roster of the rarest, fastest, and most jaw-dropping vehicles on the planet. Whether it's a weekend escape, a special occasion, or simply because you deserve it — we make the extraordinary accessible.
         </p>
-        <a href="/about/" class="btn btn--ghost fade-in fade-in-delay-3">
+        <a href="about" class="btn btn--ghost fade-in fade-in-delay-3">
           Our Story
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -137,7 +202,7 @@
 
         <!-- Car Card 1: Ferrari 296 GTB -->
         <article class="car-card fade-in fade-in-delay-1">
-          <a href="cars/la-ferrari-296-gtb.html" class="car-card__image">
+          <a href="cars/la-ferrari-296-gtb" class="car-card__image">
             <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194442_8Rb1XYtuMLFPJdUZTEhAb6V8IY07fVRnnOITqqjd.png" alt="Ferrari 296 GTB" loading="lazy">
             <div class="car-card__badge">Available</div>
           </a>
@@ -151,7 +216,7 @@
             </div>
             <div class="car-card__footer">
               <p class="car-card__price">Starting at <strong>$1,650/day</strong></p>
-              <a href="cars/la-ferrari-296-gtb.html" class="btn btn--ghost">
+              <a href="cars/la-ferrari-296-gtb" class="btn btn--ghost">
                 View
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
@@ -161,7 +226,7 @@
 
         <!-- Car Card 2: Rolls-Royce Cullinan 2026 -->
         <article class="car-card fade-in fade-in-delay-2">
-          <a href="cars/la-rolls-royce-cullinan-2026.html" class="car-card__image">
+          <a href="cars/la-rolls-royce-cullinan-2026" class="car-card__image">
             <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/194446_Tb1gsKXzlCtRwCRcTxZR86CflOxVg0IyPnfIdttW.png" alt="Rolls-Royce Cullinan 2026" loading="lazy">
             <div class="car-card__badge">Available</div>
           </a>
@@ -175,7 +240,7 @@
             </div>
             <div class="car-card__footer">
               <p class="car-card__price">Starting at <strong>$2,000/day</strong></p>
-              <a href="cars/la-rolls-royce-cullinan-2026.html" class="btn btn--ghost">
+              <a href="cars/la-rolls-royce-cullinan-2026" class="btn btn--ghost">
                 View
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
@@ -185,7 +250,7 @@
 
         <!-- Car Card 3: Lamborghini Urus Widebody -->
         <article class="car-card fade-in fade-in-delay-3">
-          <a href="cars/la-vem-lamborghini-urus-widebody.html" class="car-card__image">
+          <a href="cars/la-vem-lamborghini-urus-widebody" class="car-card__image">
             <img src="https://woeshared.s3-us-west-1.amazonaws.com/vemexoticrentals/images/159050_Qrd6bjslUkabo1OpW35VD4NDYViXUIx3owa79RN8.jpg" alt="Lamborghini Urus Widebody" loading="lazy">
             <div class="car-card__badge">Available</div>
           </a>
@@ -199,7 +264,7 @@
             </div>
             <div class="car-card__footer">
               <p class="car-card__price">Starting at <strong>$1,500/day</strong></p>
-              <a href="cars/la-vem-lamborghini-urus-widebody.html" class="btn btn--ghost">
+              <a href="cars/la-vem-lamborghini-urus-widebody" class="btn btn--ghost">
                 View
                 <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
               </a>
@@ -210,7 +275,7 @@
       </div>
 
       <div class="featured__cta fade-in">
-        <a href="/fleet/" class="btn btn--outline">
+        <a href="fleet" class="btn btn--outline">
           View Full Fleet
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -267,7 +332,7 @@
         <p class="label">Satisfied Clients</p>
       </div>
       <div class="stats__item fade-in fade-in-delay-1">
-        <p class="stats__num">56+</p>
+        <p class="stats__num">80+</p>
         <p class="label">Vehicles Available</p>
       </div>
       <div class="stats__item fade-in fade-in-delay-2">
@@ -291,7 +356,7 @@
         <h2>Your next experience<br>awaits.</h2>
       </div>
       <div class="cta-band__actions">
-        <a href="/contact/" class="btn btn--primary">
+        <a href="contact" class="btn btn--primary">
           Book a Rental
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </a>
@@ -311,27 +376,28 @@
         <div class="footer__brand">
           <p class="footer__logo">GKHT Exotics</p>
           <p>Exotic and luxury car rentals across San Francisco, Los Angeles, Miami, and Arizona. Unforgettable machines, effortless experience.</p>
+          <p class="footer__owner">Owned &amp; operated by <strong>Garrett Leake</strong> &middot; @gkht</p>
         </div>
         <div class="footer__col">
           <h4>Navigate</h4>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/fleet/">Fleet</a></li>
-            <li><a href="/about/">About</a></li>
-            <li><a href="/contact/">Contact</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="fleet">Fleet</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>Contact</h4>
           <ul>
             <li><a href="tel:2138455211">(213) 845-5211</a></li>
-            <li><a href="/contact/">Book Online</a></li>
+            <li><a href="contact">Book Online</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>Social</h4>
           <ul>
-            <li><a href="https://www.instagram.com/gkht/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.instagram.com/gkht/" target="_blank" rel="noopener me">Instagram @gkht</a></li>
             <li><a href="https://www.tiktok.com/@garrettleake" target="_blank" rel="noopener">TikTok</a></li>
             <li><a href="https://x.com/aresgarrett" target="_blank" rel="noopener">Twitter / X</a></li>
           </ul>
