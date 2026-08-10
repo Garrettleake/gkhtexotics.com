@@ -551,18 +551,30 @@
 }
 
 @media (max-width: 768px) {
-  .hero { height: auto; min-height: 0; padding-bottom: 32px; }
-  .hero__content { padding-top: calc(var(--nav-h) + 80px); padding-bottom: 40px; }
+  /* .hero is display:flex. Once the featured card stops being absolutely
+     positioned it becomes a SECOND FLEX ITEM and gets squeezed into a narrow
+     column beside the hero text. Switch to block so the two stack instead. */
+  .hero {
+    display: block;
+    height: auto;
+    min-height: 0;
+    padding-bottom: 36px;
+  }
+  .hero__content { padding-top: calc(var(--nav-h) + 72px); padding-bottom: 36px; }
   .hero-featured {
-    position: relative;
-    bottom: auto;
-    right: auto;
+    position: static;
     width: auto;
-    margin: 0 24px;
+    max-width: 460px;
+    margin: 0 20px;
     opacity: 1;
     animation: none;
   }
   .hero-featured:hover { transform: none; }
+  .hero-featured__img { aspect-ratio: 16 / 10; }
+  .hero-featured__tag { font-size: 0.58rem; letter-spacing: 0.1em; }
+  .hero-featured__model { font-size: 1.6rem; }
+  .hero-featured__specs { font-size: 0.7rem; }
+  .hero-featured__cta { font-size: 0.62rem; }
   .intro__inner { grid-template-columns: 1fr; gap: 24px; }
   .featured__grid { grid-template-columns: 1fr; gap: 2px; }
   .process__steps { grid-template-columns: 1fr; }
