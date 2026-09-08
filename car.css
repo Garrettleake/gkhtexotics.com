@@ -362,3 +362,79 @@
   transition: color var(--transition), border-color var(--transition);
 }
 .cd-spec__link:hover { color: var(--white); border-bottom-color: var(--white); }
+
+/* ── Rental essentials (M4 and any car with published terms) ── */
+.cd-terms {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--gray-2);
+}
+
+.cd-terms__h {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+  font-weight: 400;
+  margin: 0 0 28px;
+}
+
+.cd-term { margin-bottom: 30px; }
+.cd-term:last-child { margin-bottom: 0; }
+
+.cd-term h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  margin: 0 0 10px;
+}
+
+.cd-term p {
+  font-size: 0.85rem;
+  line-height: 1.75;
+  color: var(--gray-5);
+  margin: 0 0 10px;
+}
+.cd-term p:last-child { margin-bottom: 0; }
+.cd-term strong { color: var(--white); font-weight: 600; }
+
+.cd-term--flag {
+  border-left: 2px solid var(--white);
+  padding-left: 18px;
+}
+
+.cd-charges {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+.cd-charges li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 20px;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--gray-2);
+  font-size: 0.8rem;
+}
+.cd-charges li:last-child { border-bottom: none; }
+.cd-charges li span:first-child { color: var(--gray-5); }
+.cd-charges li span:last-child {
+  color: var(--white);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  white-space: nowrap;
+}
+
+.cd-term__note {
+  font-size: 0.75rem;
+  color: var(--gray-4);
+}
+
+@media (max-width: 560px) {
+  .cd-terms { margin-top: 40px; padding-top: 32px; }
+  .cd-term--flag { padding-left: 14px; }
+  .cd-charges li { font-size: 0.78rem; gap: 14px; }
+}

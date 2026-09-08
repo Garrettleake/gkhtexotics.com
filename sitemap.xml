@@ -206,11 +206,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/la-bmw-760i</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://gkhtexotics.com/cars/la-bmw-m3-g80</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -231,16 +226,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/la-dodge-charger-hellcat</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-dodge-durango-hellcat-joon</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://gkhtexotics.com/cars/la-ferrari-296-gtb</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -251,57 +236,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-bmw-m4-competition</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-chevrolet-corvette-z06</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-lamborghini-huracan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-lamborghini-urus</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-lamborghini-urus-widebody</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-mercedes-maybach-gls-600</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-mercedes-maybach-s580</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-porsche-911-gt3</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-porsche-911-gt3-rs</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://gkhtexotics.com/cars/la-lamborghini-huracan-tecnica</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-mercedes-amg-cle53-convertible</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -332,16 +267,6 @@
   </url>
   <url>
     <loc>https://gkhtexotics.com/cars/la-rolls-royce-cullinan-black-badge</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-rolls-royce-cullinan-mansory-widebody</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/la-rolls-royce-ghost-black-badge</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -391,93 +316,15 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/miami-chevrolet-corvette-c8</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://gkhtexotics.com/terms</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/miami-chevrolet-corvette-z06</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-ferrari-488-gtb</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-lamborghini-huracan-stage-2</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-lamborghini-urus-black</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-lamborghini-urus-white</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-mercedes-benz-s580</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-mercedes-maybach-gls-600</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-porsche-911-carrera-gts</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-porsche-911-gt3</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-porsche-911-turbo-s-widebody</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-porsche-macan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-rolls-royce-cullinan</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/miami-rolls-royce-cullinan-mansory</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/sf-bmw-m4-competition</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/sf-chevrolet-corvette-c8</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/sf-lamborghini-urus-yellow</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://gkhtexotics.com/cars/sf-tesla-model-3</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://gkhtexotics.com/privacy</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 </urlset>

@@ -1,0 +1,24 @@
+# Never publish internal business data.
+# The fleet spreadsheet contains partner wholesale pricing and margins.
+*.xlsx
+*.xls
+*.xlsm
+*.csv
+*.numbers
+
+# Archived inventory — kept locally so it can be restored, but must NEVER be
+# published. GitHub Pages serves any committed file, so an archived car page
+# would go live at /archive/... and could be indexed by Google.
+archive/
+backup-v1/
+backup-pre-joon-removal-*/
+backup-*/
+
+# Internal planning docs
+STRIPE-PLAN.md
+*.py
+
+# OS noise
+.DS_Store
+Thumbs.db
+desktop.ini

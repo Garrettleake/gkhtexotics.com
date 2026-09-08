@@ -405,3 +405,26 @@
     align-items: flex-start;
   }
 }
+
+/* ── City page: temporary "inventory arriving" notice ───────────────── */
+.city-restock{
+  max-width:720px;margin:0 auto;padding:48px 32px;text-align:center;
+  border:1px solid var(--gray-2,#e4e4ee);border-radius:14px;
+  background:var(--gray-1,#f7f7fb);
+}
+.city-restock .label{
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--gray-5,#6b6b7b);margin:0 0 10px;font-weight:600;
+}
+.city-restock .city-h2{margin:0 0 16px;font-size:1.7rem;line-height:1.25;}
+.city-restock p{margin:0 0 14px;color:var(--gray-6,#4a4a58);line-height:1.6;}
+.city-restock p:last-of-type{margin-bottom:26px;}
+.city-restock a{color:inherit;text-decoration:underline;}
+.city-restock__actions{
+  display:flex;gap:12px;justify-content:center;flex-wrap:wrap;
+}
+.city-restock__actions a{text-decoration:none;}
+@media(max-width:640px){
+  .city-restock{padding:36px 20px;}
+  .city-restock .city-h2{font-size:1.35rem;}
+}
