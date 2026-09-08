@@ -1,5 +1,11 @@
 User-agent: *
 Allow: /
+
+# Local-only directories. These are excluded by .gitignore and should never be
+# published, but they are listed here so that an accidental upload cannot be
+# indexed. Archived inventory returns when a replacement partner signs.
+Disallow: /archive/
 Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
 
 Sitemap: https://gkhtexotics.com/sitemap.xml
