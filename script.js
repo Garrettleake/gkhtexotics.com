@@ -138,3 +138,13 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+/* Keep the footer copyright year current.
+   The real year stays hard-coded in the HTML so crawlers and no-JS visitors
+   see it; this only steps it forward once the calendar rolls over. */
+(function () {
+  var y = String(new Date().getFullYear());
+  document.querySelectorAll('.js-year').forEach(function (el) {
+    if (el.textContent.trim() !== y) el.textContent = y;
+  });
+})();

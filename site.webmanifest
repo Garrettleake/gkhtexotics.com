@@ -1,0 +1,14 @@
+{
+  "name": "GKHT Exotics",
+  "short_name": "GKHT",
+  "description": "Exotic and luxury car rentals across Los Angeles and Phoenix/Scottsdale.",
+  "icons": [
+    { "src": "/favicon-32x32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/logo.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#0a0a0a",
+  "background_color": "#0a0a0a",
+  "display": "standalone",
+  "start_url": "/"
+}
