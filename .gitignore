@@ -22,3 +22,7 @@ STRIPE-PLAN.md
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Full-resolution source art (the cropped 1200x630 og-image.png is what ships)
+og-image (2).png
+*-source.png
