@@ -1,0 +1,72 @@
+/* Article / guide pages */
+.article-hero { padding: 60px 0 0; }
+.article-hero .label { margin-bottom: 14px; }
+.article-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.4rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  max-width: 15ch;
+}
+.article-hero__meta {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+}
+.article-body { padding: 40px 0 20px; }
+.article-prose { max-width: 720px; }
+.article-prose > p {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--gray-5);
+  margin: 0 0 22px;
+}
+.article-prose h2 {
+  font-size: clamp(1.3rem, 3vw, 1.9rem);
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin: 44px 0 16px;
+}
+.article-prose h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--white);
+  margin: 30px 0 10px;
+}
+.article-prose ul { margin: 0 0 22px; padding-left: 0; }
+.article-prose li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--gray-5);
+  margin-bottom: 10px;
+}
+.article-prose li::before {
+  content: '';
+  position: absolute;
+  left: 2px; top: 13px;
+  width: 6px; height: 6px;
+  background: var(--gray-3);
+  border-radius: 50%;
+}
+.article-prose strong { color: var(--white); font-weight: 600; }
+.article-prose a {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gray-3);
+  transition: border-color var(--transition);
+}
+.article-prose a:hover { border-bottom-color: var(--white); }
+.article-prose .article-callout {
+  border-left: 2px solid var(--white);
+  padding: 4px 0 4px 20px;
+  margin: 0 0 24px;
+}
+.article-prose .article-callout p { margin: 0; color: var(--gray-5); line-height: 1.8; }
+@media (max-width: 560px) {
+  .article-hero { padding-top: 44px; }
+  .article-prose > p, .article-prose li { font-size: 0.95rem; }
+}
