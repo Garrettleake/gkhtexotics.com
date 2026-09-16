@@ -180,6 +180,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.1;
+  letter-spacing: -0.02em;
   margin: 4px 0 10px;
   color: var(--white);
 }

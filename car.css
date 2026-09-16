@@ -438,3 +438,43 @@
   .cd-term--flag { padding-left: 14px; }
   .cd-charges li { font-size: 0.78rem; gap: 14px; }
 }
+
+/* ── About this rental (vehicle copy) ─────────────────────────── */
+.cd-about {
+  margin-top: 56px;
+  padding-top: 40px;
+  border-top: 1px solid var(--gray-2);
+}
+.cd-about__label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray-4);
+  margin: 0 0 12px;
+}
+.cd-about__h {
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  margin: 0 0 16px;
+}
+.cd-about__intro {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--gray-5);
+  margin: 0 0 30px;
+}
+.cd-about .cd-term a,
+.cd-about .cd-about__intro a {
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gray-3);
+}
+.cd-about .cd-term a:hover { border-bottom-color: var(--white); }
+@media (max-width: 560px) {
+  .cd-about { margin-top: 40px; padding-top: 28px; }
+  .cd-about__h { font-size: 1.15rem; }
+}

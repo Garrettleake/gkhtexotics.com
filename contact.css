@@ -175,3 +175,6 @@
     font-size: 1.4rem;
   }
 }
+
+/* service-area heading: h2 for document outline, sized like the block's other headings */
+.contact-block__h { font-size: clamp(1.2rem, 2.5vw, 1.8rem); }
