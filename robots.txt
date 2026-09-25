@@ -1,11 +1,107 @@
 User-agent: *
 Allow: /
-
-# Local-only directories. These are excluded by .gitignore and should never be
-# published, but they are listed here so that an accidental upload cannot be
-# indexed. Archived inventory returns when a replacement partner signs.
 Disallow: /archive/
 Disallow: /backup-v1/
 Disallow: /backup-pre-joon-removal-20260904-154625/
+
+# ---------------------------------------------------------------
+# AI search & answer engines — explicitly allowed.
+# These are the crawlers that decide whether the site can be cited
+# in ChatGPT search, Perplexity, Claude, Google AI Overviews/AI Mode,
+# Bing Copilot, Apple Intelligence and Meta AI. Blocking any of the
+# *search* / *user* agents removes the site from those answers.
+# ---------------------------------------------------------------
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: GPTBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Claude-User
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Google-Extended
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Bingbot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Applebot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: Amazonbot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+User-agent: DuckAssistBot
+Allow: /
+Disallow: /archive/
+Disallow: /backup-v1/
+Disallow: /backup-pre-joon-removal-20260904-154625/
+
+# Archived/backup directories are gitignored and never published; the Disallow
+# lines above make sure an accidental upload could not be indexed either.
 
 Sitemap: https://gkhtexotics.com/sitemap.xml

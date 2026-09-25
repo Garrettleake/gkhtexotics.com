@@ -380,6 +380,12 @@
 .car-card__price strong {
   color: var(--white);
 }
+.car-card__was {
+  font-weight: 400;
+  color: var(--gray-4);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
 
 .featured__cta {
   text-align: center;

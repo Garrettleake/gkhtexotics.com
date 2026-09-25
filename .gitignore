@@ -29,3 +29,6 @@ og-image (2).png
 
 # Python cache
 __pycache__/
+
+# IndexNow key note (the public <key>.txt at the root IS published on purpose)
+.indexnow-key

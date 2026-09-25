@@ -221,6 +221,13 @@
   border: 1px solid rgba(255,255,255,0.1);
 }
 
+.fc-badge--age {
+  background: rgba(245,245,245,0.92);
+  color: var(--black);
+  border: 1px solid rgba(255,255,255,0.4);
+  font-weight: 700;
+}
+
 /* Card body */
 .fleet-card__body {
   padding: 20px 20px 22px;
