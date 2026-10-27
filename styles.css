@@ -434,6 +434,7 @@ section {
   margin-top: 14px;
 }
 .footer__owner strong { color: var(--gray-5); font-weight: 400; }
+.footer__address { font-size: 13px; color: var(--gray-4); margin-top: 6px; }
 
 
 /* ── City landing pages ── */
