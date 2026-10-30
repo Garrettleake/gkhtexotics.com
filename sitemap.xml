@@ -458,11 +458,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gkhtexotics.com/cars/la-joon-porsche-911-gt3</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://gkhtexotics.com/cars/la-mercedes-amg-cle53-convertible</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -586,5 +581,25 @@
     <loc>https://gkhtexotics.com/rolls-royce-rental-miami</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gkhtexotics.com/cars/la-vem-rolls-royce-phantom</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gkhtexotics.com/cars/la-vem-ferrari-purosangue</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gkhtexotics.com/cars/la-vem-dodge-durango-hellcat-2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://gkhtexotics.com/cars/az-tempe-bmw-m3-competition</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

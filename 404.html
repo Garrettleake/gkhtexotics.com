@@ -22,8 +22,11 @@
     (function () {
       var p = window.location.pathname, s = window.location.search, h = window.location.hash;
       var to = null;
+      var gone = { '/cars/la-joon-porsche-911-gt3': '/cars/la-joon-porsche-911-gt3-rs' };
+      var key = p.replace(/\.html$/i, '').replace(/\/+$/, '').toLowerCase();
+      if (gone[key]) to = gone[key];
       var dir = p.match(/^\/(fleet|about|contact)\/+$/i);
-      if (dir) to = '/' + dir[1].toLowerCase();
+      if (!to && dir) to = '/' + dir[1].toLowerCase();
       else if (/\.html$/i.test(p)) to = p.replace(/\.html$/i, '');
       else if (/\/$/.test(p) && p !== '/') to = p.replace(/\/+$/, '');
       if (to && to !== p) window.location.replace(to + s + h);
