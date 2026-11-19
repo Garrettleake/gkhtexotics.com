@@ -24,49 +24,88 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  overflow-x: auto;
-  scrollbar-width: none;
-  padding: 0;
+  flex-wrap: wrap;          /* two rows on narrower screens instead of a hidden sideways scroll */
+  gap: 0 20px;
 }
-
-.fleet-bar__inner::-webkit-scrollbar { display: none; }
 
 .fleet-bar__group {
   display: flex;
-  gap: 6px;
-  padding: 14px 0;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 0;
   flex-shrink: 0;
 }
 
-/* Location buttons */
+.fleet-bar__label {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gray-5);
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+/* City buttons (links on the per-city pages) and type buttons.
+   Solid white on the black bar so they read as buttons at a glance;
+   the selected one flips to black with a white outline and a dot. */
 .loc-btn,
 .cat-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 7px 16px;
-  border-radius: 2px;
-  border: 1px solid var(--gray-2);
-  background: transparent;
-  color: var(--gray-4);
+  text-decoration: none;
+  border-radius: 3px;
+  border: 2px solid var(--white);
+  background: var(--white);
+  color: var(--black);
   cursor: pointer;
   transition: background var(--transition), color var(--transition), border-color var(--transition);
   white-space: nowrap;
 }
 
+.loc-btn {
+  font-size: 0.74rem;
+  padding: 10px 16px;
+}
+
+.cat-btn {
+  font-size: 0.66rem;
+  padding: 7px 12px;
+}
+
 .loc-btn:hover,
 .cat-btn:hover {
-  color: var(--white);
-  border-color: var(--gray-3);
+  background: var(--gray-5);
+  border-color: var(--gray-5);
 }
 
 .loc-btn.active,
 .cat-btn.active {
-  background: var(--white);
-  color: var(--black);
+  background: var(--black);
+  color: var(--white);
   border-color: var(--white);
+}
+
+.loc-btn.active::before,
+.cat-btn.active::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--white);
+  flex-shrink: 0;
+}
+
+.loc-btn:focus-visible,
+.cat-btn:focus-visible {
+  outline: 2px solid var(--white);
+  outline-offset: 3px;
 }
 
 /* ═══════════════════════════════════════════
@@ -390,13 +429,32 @@
   .fleet-bar__inner {
     flex-direction: column;
     align-items: flex-start;
-    padding: 10px 0;
-    gap: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 4px;
   }
 
   .fleet-bar__group {
     padding: 4px 0;
     flex-wrap: wrap;
+    gap: 5px;
+    max-width: 100%;
+  }
+
+  /* The bar is sticky, so keep it short on phones: the "All Cities" /
+     "All Types" buttons already say what each row is. */
+  .fleet-bar__label { display: none; }
+
+  .loc-btn {
+    font-size: 0.72rem;
+    padding: 10px 14px;
+  }
+
+  .cat-btn {
+    font-size: 0.6rem;
+    letter-spacing: 0.06em;
+    padding: 7px 8px;
+    gap: 6px;
   }
 
   .fleet-meta__inner {

@@ -25,6 +25,10 @@
 ## Main pages
 - [Exotic Car Rental — LA, Phoenix, Miami & SF](https://gkhtexotics.com/)
 - [Exotic & Luxury Car Rental Fleet — 84 Vehicles](https://gkhtexotics.com/fleet)
+- [Arizona fleet (Phoenix & Scottsdale) — 24 vehicles](https://gkhtexotics.com/fleet/az)
+- [Los Angeles fleet — 42 vehicles](https://gkhtexotics.com/fleet/la)
+- [Miami fleet — 14 vehicles](https://gkhtexotics.com/fleet/miami)
+- [San Francisco fleet — 4 vehicles](https://gkhtexotics.com/fleet/sf)
 - [About GKHT Exotics — Owned by Garrett Leake](https://gkhtexotics.com/about)
 - [Book an Exotic Car Rental — LA, Phoenix, Miami & SF](https://gkhtexotics.com/contact)
 - [Exotic Car Rental Phoenix & Scottsdale, AZ](https://gkhtexotics.com/exotic-car-rental-phoenix)

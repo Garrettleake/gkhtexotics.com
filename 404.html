@@ -25,10 +25,20 @@
       var gone = { '/cars/la-joon-porsche-911-gt3': '/cars/la-joon-porsche-911-gt3-rs' };
       var key = p.replace(/\.html$/i, '').replace(/\/+$/, '').toLowerCase();
       if (gone[key]) to = gone[key];
+      /* Per-city fleet pages live at /fleet/az, /fleet/la, /fleet/miami, /fleet/sf.
+         Catch capitals (/fleet/AZ) and the obvious other spellings. */
+      var cityMap = { az: 'az', arizona: 'az', phoenix: 'az', phx: 'az', scottsdale: 'az',
+                      la: 'la', 'los-angeles': 'la', losangeles: 'la',
+                      miami: 'miami', mia: 'miami',
+                      sf: 'sf', 'san-francisco': 'sf', sanfrancisco: 'sf', 'bay-area': 'sf' };
+      var city = key.match(/^\/fleet\/([a-z-]+)$/);
+      if (!to && city && cityMap[city[1]]) to = '/fleet/' + cityMap[city[1]];
       var dir = p.match(/^\/(fleet|about|contact)\/+$/i);
       if (!to && dir) to = '/' + dir[1].toLowerCase();
-      else if (/\.html$/i.test(p)) to = p.replace(/\.html$/i, '');
-      else if (/\/$/.test(p) && p !== '/') to = p.replace(/\/+$/, '');
+      else if (!to && /\.html$/i.test(p)) to = p.replace(/\.html$/i, '');
+      else if (!to && /\/$/.test(p) && p !== '/') to = p.replace(/\/+$/, '');
+      /* URLs are case-sensitive here and every real page is lowercase. */
+      if (!to && p !== p.toLowerCase()) to = p.toLowerCase();
       if (to && to !== p) window.location.replace(to + s + h);
     })();
   </script>
